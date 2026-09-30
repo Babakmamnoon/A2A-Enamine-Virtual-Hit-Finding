@@ -1,0 +1,24 @@
+# Core cheminformatics and modelling
+rdkit>=2024.03
+scikit-learn>=1.3
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+umap-learn>=0.5
+tqdm>=4.65
+
+# ChEMBL bioactivity retrieval
+chembl_webresource_client>=0.10
+
+# Notebook
+jupyterlab>=4.0
+ipykernel>=6.0
+
+# --- Optional: structure-based arm (AutoDock Vina) ------------------------
+# The notebook detects these and skips the docking section cleanly if they are
+# absent, renormalising the composite score over the remaining components.
+# gemmi is a hard dependency of meeko and must be installed alongside it.
+vina>=1.2
+meeko>=0.5
+gemmi>=0.6
